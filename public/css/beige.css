@@ -1,0 +1,171 @@
+﻿/*****************************/
+/*** Core html setup stuff ***/
+/*****************************/
+.inputbox, .button, .login-fields input { 
+	border: 1px solid #d6bd86;
+	background:#fff;
+	color:#ab9566;
+}
+.inputbox:hover, .button:hover, .login-fields input:hover { background:#f0ebe1; }
+
+a:link, a:visited {color: #d34100;}
+a:hover, a:active, a:focus {color: #b30000;}
+
+body {background: #e5d2a8;}
+body, td, div, p {color: #000;}
+
+/*****************************************/
+/*** Template specific layout elements ***/
+/*****************************************/
+#wrapper1 {background: url(../images/bkg_topnavi.gif) top left repeat-x;}
+#wrapper2 {}
+#wrapper3 {background: url(../images/bkg_copyright.gif) top left repeat-x;}
+
+#header{background: url(../images/bkg_header.jpg) top left no-repeat;}
+
+/*#title h1{color: #000;}*/
+
+/**********************/
+/*** Top Navigation ***/
+/**********************/
+#topnavi {}
+#topnavi ul li {}
+#topnavi ul li a {background:url(../images/bkg_but_l.gif) top left no-repeat;}
+#topnavi ul li a span{color: #c88645; background:url(../images/bkg_but_r.gif) top right no-repeat;}
+#topnavi ul li a:hover, #topnavi li#current a {background:url(../images/bkg_but_l.gif) bottom left no-repeat;}
+#topnavi ul li a:hover span, #topnavi li#current a span{color: #fff; background:url(../images/bkg_but_r.gif) bottom right no-repeat;}
+
+/**********************/
+/*** User 4 (Search menu) ***/
+/**********************/
+/*#search {background: url(../images/bkg_search.gif) top left no-repeat;}*/
+
+/*#search div.search .inputbox{
+	border: none;
+	background: transparent;
+	color:#fff;
+}/*
+
+/**********************/
+/*** Top (Newsflash) ***/
+/**********************/
+#header_text div.newsflash p {}
+#header_text div.newsflash a {}
+
+/**********************/
+/*** Main Body ***/
+/**********************/
+#main{}
+
+/**********************/
+/*** Left Column ***/
+/**********************/
+#leftcol h3{
+	color: #000;
+	background: url(../images/bkg_sideheader.gif) top left no-repeat; 
+}
+
+#leftcol div.module_menu div div, #leftcol div.module div div, #leftcol div.moduletable_menu div div, #leftcol div.moduletable div div{
+	background: transparent url(../images/bkg_sidemenu_top.gif) top left no-repeat; 
+}
+#leftcol div.module_menu div div div, #leftcol div.module div div div, #leftcol div.moduletable_menu div div div, #leftcol div.moduletable div div div{
+	background: transparent url(../images/bkg_sidemenu_bot.gif) bottom left no-repeat; 
+}
+#leftcol div.module_menu div div div div, #leftcol div.module div div div div, #leftcol div.moduletable_menu div div div div, #leftcol div.moduletable div div div div {background: transparent;}
+
+#leftcol div.module_menu , #leftcol div.module, #leftcol div.moduletable, #leftcol div.moduletable_menu {
+	background: transparent url(../images/bkg_sidemenu_mid.gif) top left repeat-y; 
+} 
+
+#leftcol a:link, #leftcol a:visited {color:#d34100;}
+#leftcol a:hover, #leftcol a:active {color:#b30000;}
+
+/**********************/
+/*** Right Column ***/
+/**********************/
+#rightcol h3{
+	color: #000;
+	background: url(../images/bkg_sideheader.gif) top left no-repeat; 
+}
+
+#rightcol div.module_menu div div, #rightcol div.module div div, #rightcol div.moduletable_menu div div, #rightcol div.moduletable div div{
+	background: transparent url(../images/bkg_sidemenu_top.gif) top left no-repeat; 
+}
+#rightcol div.module_menu div div div, #rightcol div.module div div div, #rightcol div.moduletable_menu div div div, #rightcol div.moduletable div div div{
+	background: transparent url(../images/bkg_sidemenu_bot.gif) bottom left no-repeat; 
+}
+#rightcol div.module_menu div div div div, #rightcol div.module div div div div, #rightcol div.moduletable_menu div div div div, #rightcol div.moduletable div div div div {background: transparent;}
+
+#rightcol div.module_menu , #rightcol div.module, #rightcol div.moduletable, #rightcol div.moduletable_menu {
+	background: transparent url(../images/bkg_sidemenu_mid.gif) top left repeat-y; 
+} 
+
+#rightcol a:link, #rightcol a:visited {color:#d34100;}
+#rightcol a:hover, #rightcol a:active {color:#b30000;}
+
+/******************************************************************/
+/* Controls Link Icon appearance in side modules */
+/******************************************************************/
+#leftcol ul.menu li a,
+#leftcol ul.menu li ul li a,
+#rightcol ul.menu li a,
+#rightcol ul.menu li ul li a,
+ul.mostread li a,
+ul.latestnews li a,
+.moduletable ul li a {
+	border-bottom: 1px solid #d6bd86;
+}
+
+#leftcol ul.menu li a:hover,
+#leftcol ul.menu li.current a,
+#leftcol ul.menu li ul li a:hover,
+#rightcol ul.menu li a:hover,
+#rightcol ul.menu li.current a,
+#rightcol ul.menu li ul li a:hover,
+ul.mostread li a:hover,
+ul.latestnews li a:hover,
+.moduletable ul li a:hover {
+	color: #b30000;
+	background: #fff;
+	border-bottom: 1px solid #d6bd86;
+}
+
+/**********************/
+/*** Main Content Menu ***/
+/**********************/
+#maincol_body h2 {color: #795f4a; border-bottom: 1px solid #fff;}
+#maincol_body h3 {color: #000;}
+
+#pathway div.breadcrumbs{}
+#pathway div.breadcrumbs a{}
+
+/*** Controls publishing information: date, writer and hits ***/
+.article-info {color:#8c633b;}
+
+/*** Controls page navigation***/
+div.pagenavcounter{color:#8c633b;}
+
+.readmore a {
+	background: url(../images/bkg_readmore.png) top left no-repeat;
+}
+
+/******************/
+/***  Footer  ***/
+/******************/
+#footer_top{background: url(../images/bkg_footer_top.gif) top left no-repeat;}
+#footer_bot{background: url(../images/bkg_footer_bot.gif) top left no-repeat;}
+#footer{background: url(../images/bkg_footer_mid.gif) top left repeat-y;}
+#footer h3{
+	color:#000;
+}
+#footer p {}
+
+#footer a:link, #footer a:visited {}
+#footer a:hover, #footer a:active {}
+/******************/
+/***  Copyright  ***/
+/******************/
+#copyright, #copyright div {
+}
+#copyright a:link, #copyright a:active, #copyright a:visited {
+}

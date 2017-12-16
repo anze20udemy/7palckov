@@ -1,0 +1,506 @@
+﻿/*****************************/
+/*** Core html setup stuff ***/
+/*****************************/
+html, body { height: 100%; margin: 0px; padding: 0px; }
+form { margin: 0px; padding: 0px; vertical-align:middle;	display:inline; }
+ul  {	margin: 0px; padding: 0px; list-style: none; }
+a,img{ outline:none; margin:0; padding:0; border:none; }
+p { margin-top: 0px; margin-bottom: 5px; }
+.clear, .clr { clear: both; overflow:hidden; font-size:0; line-height:0; }
+.left { float: left; }
+.right { float: right; }
+h2, h3, h4, h5, h6{  margin:10px 0px; line-height:normal; }
+h1 { font-size:22px; margin:0px;}
+h2 { font-size:20px; width: 100%; float:left; display:block;}
+h3 { font-size:18px;}
+h4 { font-size:14px;}
+h5 { font-size:12px;}
+h6 { font-size:11px;}
+
+a:link, a:visited {text-decoration: none; font-weight: normal;}
+a:hover, a:active, a:focus {text-decoration: underline; font-weight: normal; outline:none;}
+
+body {width:100%; text-align: center;}
+body, td, div, p {font-family: Verdana, sans-serif; font-size: 14px;	line-height: 1.3em;}
+td, div, p {text-align: left;}
+
+/*****************************************/
+/*** Template specific layout elements ***/
+/*****************************************/
+#wrapper1{
+	float: left;
+	width:100%;
+	height:50px;
+	text-align: center;
+}
+#wrapper2{
+	float: left;
+	width:100%;
+	text-align: center;
+}
+#wrapper3{
+	float: left;
+	width:100%;
+	height:80px;
+	text-align: center;
+}
+
+.wrapper_fixed{
+	width:1000px;
+	margin:0px auto;
+	padding:0px;
+	position: relative;
+}
+
+#header{
+	float: left;
+	width:1000px;
+	height:300px;
+	padding:0px;
+	margin:0px;
+}
+
+/*#title {
+	float: left;
+	height:80px;
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+}
+
+#title h1{
+	margin: 0px;
+	padding: 0px;
+	font-size: 42px;
+	font-weight: normal;
+	line-height:80px;
+	font-family: arial, sans-serif;
+	text-align: left;
+}
+
+/**********************/
+/*** Top Navigation ***/
+/**********************/
+#topnavi {
+	float: left;
+	width:1100px;
+	height:50px;
+	margin:10px 15px;
+	padding:0px;
+}
+
+#topnavi ul {
+	float: left;
+	width: auto;
+	height:50px;
+	margin: 0px;
+	padding: 0px;
+	list-style:none;
+}
+
+#topnavi ul li {
+	float: left;
+	height: 50px;
+	margin: 0px 5px 0px 0px;
+	padding: 0px;
+	font-size: 23px;
+	position: relative;
+	display: block;
+}
+#topnavi ul li a {
+	float:left;
+	height: 30px;
+	margin: 5px;
+	cursor:pointer;
+}
+
+#topnavi ul li a span{
+	float:left;
+	height: 50px;
+	margin: 0px;
+	padding: 0px 10px;
+	line-height: 50px;
+	font-weight: normal;
+	text-decoration: none;
+	display: block;
+}
+
+#topnavi ul li a:hover, #topnavi ul li a:focus {
+	float:left;
+	margin: 0px;
+	cursor:pointer;
+	text-decoration: none;
+}
+
+#topnavi ul li a:hover span, #topnavi ul li a:focus span{
+	float:left;
+	margin: 0px;
+	padding: 0px 10px;
+	line-height: 50px;
+	text-decoration: none;
+	display: block;
+}
+
+#topnavi ul li#current a span{
+	margin: 0px;
+	padding: 0px 10px;
+	line-height: 50px;
+	text-decoration: none;
+	display: block;
+}
+
+/**********************/
+/*** User 4 (Search menu) ***/
+/**********************/
+/*#search{
+	float: left;
+	width:150px;
+	height:50px;
+	margin:0px;
+	padding:0px;
+	position:absolute;
+	top:15px;
+	right:0px;
+}
+
+#search div.search .inputbox{
+	width:140px;
+	height:20px;
+	margin:15px 0px;
+	padding:0px 0px 0px 10px;
+	font-size:12px;
+	line-height:20px;
+}*/
+
+/**********************/
+/*** Top (Newsflash) ***/
+/**********************/
+#header_text {
+	float: left;
+	width: 340px;
+	height: 240px;
+	margin: 0px;
+	padding: 0px;
+	position:absolute;
+	top:100px;
+	left:15px;
+	overflow: auto;
+}
+
+#header_text div.newsflash {
+	margin: 0px;
+	padding: 0px;
+	text-align:left;
+}
+
+/**********************/
+/*** Main Body ***/
+/**********************/
+#main{
+	float:left;
+	width:1000px;
+	margin:0px;
+	padding:10px 0px;
+}
+
+/**********************/
+/*** Left Column ***/
+/**********************/
+#leftcol {
+	float: left;
+	width:220px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#leftcol h3{
+	width:220px;
+	height:40px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+	font-weight:normal;
+	font-family: arial, sans-serif;
+	line-height: 40px;
+	text-align: center;
+}
+
+#leftcol div.module_menu , #leftcol div.module, #leftcol div.moduletable, #leftcol div.moduletable_menu {
+	width:220px;
+	padding: 0px;
+	margin: 0px 0px 10px 0px;
+} 
+#leftcol div.module_menu div div div, #leftcol div.module div div div, #leftcol div.moduletable div div div, #leftcol div.moduletable_menu div div div{
+	padding: 0px 0px 10px 0px;
+} 
+
+/*Controls margins and paddings of side content */
+#leftcol div.module div div div div, #leftcol div.module div div div p, #leftcol div.moduletable div div div div, #leftcol div.moduletable_menu div div div div {margin:0px; padding: 5px 10px;}
+#leftcol div.module div div div div p {margin:0px; padding: 0px;}
+#leftcol div.module_menu ul, #leftcol div.moduletable ul, #leftcol div.module ul  {margin:0px 4px 0px 4px; padding: 5px 0px;}
+#leftcol div.module_menu ul ul, #leftcol div.moduletable ul ul, #leftcol div.module ul ul {margin:0px; padding: 0px;}
+
+#leftcol a:link, #leftcol a:visited {text-decoration: none;}
+#leftcol a:hover, #leftcol a:active {text-decoration: none;}
+
+/**********************/
+/*** Right Column ***/
+/**********************/
+#rightcol {
+	float: left;
+	width:220px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#rightcol h3{
+	width:220px;
+	height:40px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+	font-weight:normal;
+	font-family: arial, sans-serif;
+	line-height: 40px;
+	text-align: center;
+}
+
+#rightcol div.module_menu , #rightcol div.module, #rightcol div.moduletable, #rightcol div.moduletable_menu {
+	width:220px;
+	padding: 0px;
+	margin: 0px 0px 10px 0px;
+} 
+#rightcol div.module_menu div div div, #rightcol div.module div div div, #rightcol div.moduletable div div div, #rightcol div.moduletable_menu div div div{
+	padding: 0px 0px 10px 0px;
+} 
+
+/*Controls margins and paddings of side content */
+#rightcol div.module div div div div, #rightcol div.module div div div p, #rightcol div.moduletable div div div div, #rightcol div.moduletable_menu div div div div {margin:0px; padding: 5px 10px;}
+#rightcol div.module div div div div p {margin:0px; padding: 0px;}
+#rightcol div.module_menu ul, #rightcol div.moduletable ul, #rightcol div.module ul  {margin:0px 4px 0px 4px;	padding: 5px 0px;}
+#rightcol div.module_menu ul ul, #rightcol div.moduletable ul ul, #rightcol div.module ul ul {margin:0px; padding: 0px;}
+
+#rightcol a:link, #rightcol a:visited {text-decoration: none;}
+#rightcol a:hover, #rightcol a:active {text-decoration: none;}
+
+/******************************************************************/
+/* Controls Link Icon appearance in side modules */
+/******************************************************************/
+#leftcol ul.menu li a,
+#leftcol ul.menu li ul li a,
+#rightcol ul.menu li a,
+#rightcol ul.menu li ul li a,
+ul.mostread li a,
+ul.latestnews li a,
+.moduletable ul li a {
+	display:block;
+	padding:5px;
+	margin:0px;
+	list-style:none;
+}
+
+/**********************/
+/*** Main Content Menu ***/
+/**********************/
+#maincol0 {
+	float: left;
+	width:530px;
+	margin: 0px 15px 10px 15px;
+	padding: 0px;
+}
+
+#maincol1 {
+	float: left;
+	width:750px;
+	margin: 0px 15px 10px 15px;
+	padding: 0px;
+}
+#maincol2 {
+	float: left;
+	width:750px;
+	margin: 0px 15px 10px 15px;
+	padding: 0px;
+}
+#maincol3 {
+	float: left;
+	width:970px;
+	margin: 0px 15px 10px 15px;
+	padding: 0px;
+}
+
+#maincol_body {float: left; width:100%;}
+
+#maincol_body h2 {font-size: 24px; font-family: arial, sans-serif;}
+#maincol_body h3 {}
+
+/*span.item-title a {font-weight:bold;}
+.first dl dt,
+.first dl dd {display:inline; margin:0px; padding:0px;}
+dl {margin-bottom: 20px;}
+
+/*** Controls images in main content ***/
+#maincol_body img {float:left; margin:5px; padding:0px;}
+
+#pathway {
+	padding:0px;
+	margin:10px 0px 20px 0px;
+	text-align:left;
+	font-size:12px;
+	font-weight:bold;
+	display:block;
+}
+
+/*** Controls publishing information: date, writer and hits ***/
+.article-info {font-size:12px;}
+.article-info-term {	font-weight: bold;}
+
+/*** Controls "Print" and "Email" icons ***/
+ul.actions {float:right;}
+ul.actions li{	float:left; height: 20px; margin:0 5px;}
+
+/*** Controls page navigation***/
+div.pagenavcounter{width:100%; text-align:center;}
+div.pagination, p.counter{width:100%; text-align:center; margin:15px 0 10px 0;}
+div.pagination ul li{display:inline; padding: 0 3px;}
+ul.pagenav {width:100%; text-align:center;}
+ul.pagenav li{display:inline;}
+
+
+.readmore a {
+	height:30px;
+	padding-left:35px;
+	line-height:30px;
+	margin:10px 0px 0px 0px;
+	display:block;
+}
+
+/*** Controls distance between articles***/
+.item-separator {margin-bottom:10px;}
+.row-separator {margin-bottom:10px;}
+
+/**************************/
+/*** Banner ***/
+/**************************/
+.banneritem, .banneritem img {
+	margin:10px auto;
+}
+
+/*******************/
+/***  Login Form  ***/
+/*******************/
+.button {height:25px; cursor:pointer;} /***Controls button in login page***/
+.inputbox {padding:0 0 0 2px;} /***Controls inputs in login form on home page***/
+.login-fields input {width:200px; height:20px; padding:0 0 0 2px;} /***Controls inputs in login page***/
+
+fieldset {border: none; padding:0px;}
+
+/***Controls lower links in login form***/
+#login-form ul li{ padding-left: 10px; }
+#login-form ul li a {text-align: left; padding: 0px; font-size: 12px;}
+
+/***Controls inputs and labels in login form on home page***/
+#login-form fieldset p#form-login-username label,
+#login-form fieldset p#form-login-username input,
+#login-form fieldset p#form-login-password label,
+#login-form fieldset p#form-login-password input {
+	margin-left:10px;
+	display: block;
+}
+
+#modlgn-username, #modlgn-passwd {width:150px; height:20px;}
+#form-login-remember label{margin-left:10px;}
+#login-form fieldset input.button {margin-left:20px;}
+
+/***Controls login page***/
+.login-fields{margin-bottom:10px;}
+.login-fields label,
+.login-fields input {
+	margin-left:10px;
+	display: block;
+}
+button.button {margin:10px 0 0 10px;}
+
+
+/******************/
+/***  Footer  ***/
+/******************/
+#footer_top{
+	float:left;
+	width:1000px;
+	height:5px;
+	margin:10px 0px 0px 0px;
+	padding:0px;
+}
+
+#footer_bot{
+	float:left;
+	width:1000px;
+	height:5px;
+	margin:0px;
+	padding:0px;
+}
+
+#footer{
+	float:left;
+	width:1000px;
+	margin:0px;
+	padding:10px 0px;
+}
+
+.footer_small {
+	float: left;
+	width:200px;
+	padding: 0px;
+	margin: 0px 10px;
+}
+.footer_big {
+	float: left;
+	width:360px;
+	padding: 0px;
+	margin: 0px 15px 0px 15px;
+}
+#footer h3{
+	margin:0px 0px 10px 0px;
+	padding:0px;
+	font-size: 18px;
+	font-weight: normal;
+	font-family: arial, sans-serif;
+}
+
+/******************/
+/***  Copyright  ***/
+/******************/
+.footer1, .footer2 {
+	float:left;
+	width:1000px;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+}
+#copyright{
+	float:left;
+	width:1000px;
+	margin:0px;
+	padding:20px 0px;
+	font-size: 12px;
+	text-align:center;
+}
+
+#copyright div, #copyright a:link, #copyright a:active, #copyright a:visited {
+	font-size: 12px;
+}
+
+/* System Standard Messages */
+#system-message { margin-bottom: 20px; }
+
+#system-message dd.message ul { background: #C3D2E5 url(../../system/images/notice-info.png) 4px center no-repeat;border-top: 3px solid #DE7A7B; border-bottom: 3px solid #DE7A7B; margin:0px; padding-left: 40px; text-indent:0px;}
+
+/* System Error Messages */
+#system-message dd.error ul { color: #c00; background: #E6C0C0 url(../../system/images/notice-alert.png) 4px center no-repeat; border-top: 3px solid #DE7A7B; border-bottom: 3px solid #DE7A7B; margin:0px; padding-left: 40px; text-indent:0px;}
+
+/* System Notice Messages */
+#system-message dd.notice ul { color: #c00; background: #EFE7B8 url(../../system/images/notice-note.png) 4px center no-repeat; border-top: 3px solid #F0DC7E; border-bottom: 3px solid #F0DC7E; margin:0px; padding-left: 40px; text-indent:0px;}
+
+#syndicate{
+	float:left;
+	padding-left: 25px;
+}
